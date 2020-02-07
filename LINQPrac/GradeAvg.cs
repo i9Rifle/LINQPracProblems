@@ -18,7 +18,12 @@ namespace LINQPrac
         };
         public void CalcGradeAvg()
         {
-            var calculatedgrades = classGrades.Where(g => g.)
+            var classGradesList = classGrades.Select(s => s.Split(',').Select(n => Convert.ToInt32(n)).ToList().Average()).ToList();
+
+            var averagegrades = classGradesList.Average();
+            {
+                Console.WriteLine(averagegrades);
+            }
         }
     }
 }

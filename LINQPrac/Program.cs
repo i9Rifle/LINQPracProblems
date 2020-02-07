@@ -10,6 +10,11 @@ namespace LINQPrac
     {
         static void Main(string[] args)
         {
+
+            Grades myGrades = new Grades();
+            myGrades.CalcGradeAvg();
+
+
             Word word = new Word();
             word.GetWords();
 
