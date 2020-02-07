@@ -10,6 +10,14 @@ namespace LINQPrac
     {
         static void Main(string[] args)
         {
+            Word word = new Word();
+            word.GetWords();
+
+            Name name = new Name();
+            name.GetList();
+
+
+
         }
     }
 }
